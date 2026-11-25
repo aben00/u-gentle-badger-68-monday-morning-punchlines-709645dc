@@ -1,6 +1,11 @@
 // Monday Morning Punchlines — make.fun entry
 // Writes a single joke about Monday mornings to /output/entry.txt:
 // one line, 1–200 characters, deterministic on every run.
+//
+// Run: node main.ts
+// Then: cat /output/entry.txt
+// The output is byte-identical on every run: the same line, no
+// trailing newline, no timestamps, no randomness anywhere.
 
 import fs from "node:fs";
 import path from "node:path";
